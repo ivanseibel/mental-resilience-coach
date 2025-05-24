@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Speech Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Or use an inline style tag if preferred for now: -->
+    <!-- <style></style> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Text-to-Speech Generator</h1>
+
+        <textarea id="text-input" placeholder="Enter text here..."></textarea>
+
+        <select id="voice-select">
+            <!-- Voice options will be populated by JavaScript -->
+        </select>
+
+        <button id="generate-button">Generate Speech</button>
+
+        <audio id="audio-playback" controls style="display: none;"></audio>
+
+        <div id="status-message"></div>
+    </div> <!-- Closing the container div -->
+
+    <script src="script.js"></script>
+    <!-- Or use an inline script tag if preferred for now: -->
+    <!-- <script></script> -->
+</body>
+</html>
