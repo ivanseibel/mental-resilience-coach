@@ -1,6 +1,5 @@
-// STEP 1: API Key Placeholder
-// IMPORTANT: Replace "YOUR_API_KEY_HERE" with your actual Google Generative AI API key.
-const GEMINI_API_KEY = "YOUR_API_KEY_HERE";
+// STEP 1: Import Gemini API Key
+import { GEMINI_API_KEY } from './gemini_api_key.js';
 
 // STEP 2: DOM Element References
 const textInput = document.getElementById('text-input');
@@ -56,7 +55,7 @@ generateButton.addEventListener('click', async () => {
                 text: finalText
             }]
         }],
-        config: {
+        generationConfig: {
             speechConfig: {
                 voiceConfig: {
                     prebuiltVoiceConfig: {
